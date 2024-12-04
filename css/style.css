@@ -1,6 +1,11 @@
 body {
-	background-color: rgb(142,168,160);
+	background-color: #BA9F38;
 }
+
+.gallery-body {
+	background-color: #E1CC96;
+}
+
 .center{
 	text-align: center;
 }
@@ -39,27 +44,155 @@ body {
   font-weight: <300>;
   font-style: normal;
 }
+
+.topnav {
+  background-color: #60688e;
+  overflow: hidden;
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color: #688e60;
+  color: white;
+}
+.rock-salt-regular {
+  font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.marcellus-regular {
+  font-family: "Marcellus", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.dela-gothic-one-regular {
+  font-family: "Dela Gothic One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.hina-mincho-regular {
+  font-family: "Hina Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.gallery-image {
+	max-width: 50%;
+
+}
+
+.gallery-image img {
+	width: 100%;
+}
+
+.gallery-example {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.button_holder {
+	display: flex;
+	flex-direction: row;
+}
+
+button_next {  }
+button_previous {  }
+
+.stepper {  }
+
+button {
+	background-color: #FCEBD0;
+	color: #1D3B28;
+	font-family: "Dela Gothic One", serif;
+  font-weight: 400;
+  font-style: normal;
+	margin: 1rem;
+	padding: 1rem;
+	min-width: 10rem;
+	font-size: 1.2rem;
+	border-radius: 2.0rem;
+	border: rgb(254 153 79);
+}
+
+
+figcaption {
+	color:#1D3B28;
+font-family: "Hina Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 200%;
+  text-align: center;
+}
+
+
+a{
+	text-decoration: none;
+}
+
+.hideThis {
+display: none;
+}
+
+
 h1 {
-	color: slategrey;
+	color: #FCEBD0;
 	font-family: "abril-fatface-regular";
 	font-size: 350%;
-	border-color: rgb(168, 142, 163);
+	text-align: center;
+	border-color: #E1CC96;
 	border-width: 15px;
 	border-style: double;
 	border-radius: 10px;
-	background-color: lightyellow;
-
+	background-color: #1D3B28;
+}
+.gallery-h1{
+	text-align: center;
+	color: rgb(248 241 233);
+	font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  font-style: normal;
+	font-size: 200%;
 }
 
 p {
 	font-family: "gowun-batang-regular";
-	font-size: 
-}
-h2 {
-	color: slategrey;
 	font-size: 150%;
-	background-color: lightyellow;
-	border-color: rgb(168, 142, 163);
+	color:#1D3B28;
+}
+.gallery-p {
+		text-align: center;
+		font-size: 175%;
+  	color: #1D3B28;
+  	font-family: "Hina Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.artists-p{
+		  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <300>;
+  font-style: normal;
+  font-size: 140%;
+}
+
+h2 {
+	color: #FCEBD0;
+	font-family: "abril-fatface-regular";
+	font-size: 200%;
+	background-color: #1D3B28;
+	border-color: #E1CC96;
 	border-width: 5px;
 	border-style: solid;
 	border-radius:10px;
@@ -71,27 +204,28 @@ ul {
 	list-style-position: inside;
 	font-size: 115%;
 	list-style: none;
+	color: #1D3B28;
 }
 footer {
-	background-color: lightyellow;
+	font-family: "abril-fatface-regular";
+	background-color: #FCEBD0 ;
 	height: 50px;
 	font-size: 20px;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: flex-end;
 }
+
 header {
-	font-family: "gowun-batang-regular";
-	background-color: lightyellow;
+	font-family: "abril-fatface-regular";
+	background-color: #FCEBD0 ;
 	height: 50px;
 	font-size: 20px;
 	display: flex;
 	justify-content: space-around;
 
 }
-a{
-	text-decoration: none;
-}
+
 
 .skip {
   position: absolute;
@@ -102,4 +236,33 @@ a{
   overflow: hidden;
 }
 
+/*start of media queries*/
+@media screen and (max-width: 500px){
+main {
+	width: 100%;
+}
+body {
+	background-color: #B1BACA;
+}
+
+
+}
+
+@media screen and (min-width: 501px){
+main {
+	width: 100%;
+}
+body {
+	background-color: #E1CC96;
+}
+
+@media screen and (min-width: 720px){
+main {
+	width: 100%;
+}
+body {
+	background-color: #BA9F38;
+}
+
+}
 	</style>
